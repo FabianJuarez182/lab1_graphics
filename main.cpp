@@ -186,7 +186,60 @@ void fillPolygon(const std::vector<Vertex2>& vertices, const Color& color) {
 
 
 void render() {
-  std::vector<Vertex2> polygon = {
+
+    std::vector<Vertex2> polygon = {
+        Vertex2(165.0f, 380.0f),
+        Vertex2(185.0f, 360.0f),
+        Vertex2(180.0f, 330.0f),
+        Vertex2(207.0f, 345.0f),
+        Vertex2(233.0f, 330.0f),
+        Vertex2(230.0f, 360.0f),
+        Vertex2(250.0f, 380.0f),
+        Vertex2(220.0f, 385.0f),
+        Vertex2(205.0f, 410.0f),
+        Vertex2(193.0f, 383.0f)
+    };
+
+  Color polygonColor(255, 255, 255);  // Color blanco para el polígono
+  Color polygonFill(255,255,0);
+  fillPolygon(polygon, polygonFill);
+  drawPolygon(polygon, polygonColor);
+
+
+  renderBuffer();
+
+    std::vector<Vertex2> polygon2 = {
+        Vertex2(321.0f, 335.0f),
+        Vertex2(288.0f, 286.0f),
+        Vertex2(339.0f, 251.0f),
+        Vertex2(374.0f, 302.0f)
+    };
+
+
+  Color polygonColor2(255, 255, 255);  // Color blanco para el polígono
+  Color polygonFill2(0,0,255);
+  fillPolygon(polygon2, polygonFill2);
+  drawPolygon(polygon2, polygonColor2);
+
+
+  renderBuffer();
+
+    std::vector<Vertex2> polygon3 = {
+        Vertex2(377.0f, 249.0f),
+        Vertex2(411.0f, 197.0f),
+        Vertex2(436.0f, 249.0f)
+    };
+
+
+  Color polygonColor3(255, 255, 255);  // Color blanco para el polígono
+  Color polygonFill3(255,0,0);
+  fillPolygon(polygon3, polygonFill3);
+  drawPolygon(polygon3, polygonColor3);
+
+
+  renderBuffer();
+
+  std::vector<Vertex2> polygon4 = {
       Vertex2(413.0f, 177.0f),
       Vertex2(448.0f, 159.0f),
       Vertex2(502.0f, 88.0f),
@@ -208,10 +261,10 @@ void render() {
   };
 
 
-  Color polygonColor(255, 255, 255);  // Color blanco para el polígono
-  Color polygonFill(0,255,0);
-  fillPolygon(polygon, polygonFill);
-  drawPolygon(polygon, polygonColor);
+  Color polygonColor4(255, 255, 255);  // Color blanco para el polígono
+  Color polygonFill4(0,255,0);
+  fillPolygon(polygon4, polygonFill4);
+  drawPolygon(polygon4, polygonColor4);
 
   renderBuffer();
 
