@@ -187,20 +187,15 @@ void fillPolygon(const std::vector<Vertex2>& vertices, const Color& color) {
 
 void render() {
     std::vector<Vertex2> polygon = {
-        Vertex2(165.0f, 380.0f),
-        Vertex2(185.0f, 360.0f),
-        Vertex2(180.0f, 330.0f),
-        Vertex2(207.0f, 345.0f),
-        Vertex2(233.0f, 330.0f),
-        Vertex2(230.0f, 360.0f),
-        Vertex2(250.0f, 380.0f),
-        Vertex2(220.0f, 385.0f),
-        Vertex2(205.0f, 410.0f),
-        Vertex2(193.0f, 383.0f)
+        Vertex2(321.0f, 335.0f),
+        Vertex2(288.0f, 286.0f),
+        Vertex2(339.0f, 251.0f),
+        Vertex2(374.0f, 302.0f)
     };
 
+
   Color polygonColor(255, 255, 255);  // Color blanco para el polígono
-  Color polygonFill(255,255,0);
+  Color polygonFill(0,0,255);
   fillPolygon(polygon, polygonFill);
   drawPolygon(polygon, polygonColor);
 
