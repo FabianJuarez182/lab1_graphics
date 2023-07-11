@@ -19,6 +19,6 @@ we call the executable to create the image
 call GAME.exe
 ```
 Then we can see this image complete with this code
-![out.bmp](https://imgur.com/a/k8xUCs3)
+![out.bmp](https://i.imgur.com/XA40cds.png)
 
 
