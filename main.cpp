@@ -205,9 +205,6 @@ void render() {
   fillPolygon(polygon, polygonFill);
   drawPolygon(polygon, polygonColor);
 
-
-  renderBuffer();
-
     std::vector<Vertex2> polygon2 = {
         Vertex2(321.0f, 335.0f),
         Vertex2(288.0f, 286.0f),
@@ -222,8 +219,6 @@ void render() {
   drawPolygon(polygon2, polygonColor2);
 
 
-  renderBuffer();
-
     std::vector<Vertex2> polygon3 = {
         Vertex2(377.0f, 249.0f),
         Vertex2(411.0f, 197.0f),
@@ -235,9 +230,6 @@ void render() {
   Color polygonFill3(255,0,0);
   fillPolygon(polygon3, polygonFill3);
   drawPolygon(polygon3, polygonColor3);
-
-
-  renderBuffer();
 
   std::vector<Vertex2> polygon4 = {
       Vertex2(413.0f, 177.0f),
@@ -266,7 +258,6 @@ void render() {
   fillPolygon(polygon4, polygonFill4);
   drawPolygon(polygon4, polygonColor4);
 
-  renderBuffer();
 
   std::vector<Vertex2> polygon5 = {
       Vertex2(682.0f, 175.0f),
