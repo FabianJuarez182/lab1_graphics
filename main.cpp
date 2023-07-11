@@ -207,6 +207,7 @@ void render() {
       Vertex2(466.0f, 180.0f)
   };
 
+
   Color polygonColor(255, 255, 255);  // Color blanco para el polígono
   Color polygonFill(0,255,0);
   fillPolygon(polygon, polygonFill);
