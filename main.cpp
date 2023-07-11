@@ -186,18 +186,45 @@ void fillPolygon(const std::vector<Vertex2>& vertices, const Color& color) {
 
 
 void render() {
-    std::vector<Vertex2> polygon = {
-        Vertex2(377.0f, 249.0f),
-        Vertex2(411.0f, 197.0f),
-        Vertex2(436.0f, 249.0f)
-    };
+  std::vector<Vertex2> polygon = {
+      Vertex2(413.0f, 177.0f),
+      Vertex2(448.0f, 159.0f),
+      Vertex2(502.0f, 88.0f),
+      Vertex2(553.0f, 53.0f),
+      Vertex2(535.0f, 36.0f),
+      Vertex2(676.0f, 37.0f),
+      Vertex2(660.0f, 52.0f),
+      Vertex2(750.0f, 145.0f),
+      Vertex2(761.0f, 179.0f),
+      Vertex2(672.0f, 192.0f),
+      Vertex2(659.0f, 214.0f),
+      Vertex2(615.0f, 214.0f),
+      Vertex2(632.0f, 230.0f),
+      Vertex2(580.0f, 230.0f),
+      Vertex2(597.0f, 215.0f),
+      Vertex2(552.0f, 214.0f),
+      Vertex2(517.0f, 144.0f),
+      Vertex2(466.0f, 180.0f)
+  };
 
 
   Color polygonColor(255, 255, 255);  // Color blanco para el polígono
-  Color polygonFill(255,0,0);
+  Color polygonFill(0,255,0);
   fillPolygon(polygon, polygonFill);
   drawPolygon(polygon, polygonColor);
 
+  renderBuffer();
+
+  std::vector<Vertex2> polygon5 = {
+      Vertex2(682.0f, 175.0f),
+      Vertex2(708.0f, 120.0f),
+      Vertex2(735.0f, 148.0f),
+      Vertex2(739.0f, 170.0f)
+  };
+  Color polygonColor5(255, 255, 255);  // Color blanco para el polígono
+  Color polygonFill5(0,0,0);
+  fillPolygon(polygon5, polygonFill5);
+  drawPolygon(polygon5, polygonColor5);
 
   renderBuffer();
 }
